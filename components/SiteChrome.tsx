@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Arrow, Facebook, GitHub, LinkedIn, Twitter } from "./Icons";
 import { GITHUB_URLS, SOCIAL_URLS } from "@/constants/social";
 import { CONTACT_EMAIL, CONTACT_EMAIL_URL } from "@/constants/site";
@@ -6,7 +7,7 @@ import { CONTACT_EMAIL, CONTACT_EMAIL_URL } from "@/constants/site";
 export function Logo() {
   return (
     <Link className="logo" href="/" aria-label="Ponup home">
-      <span className="logo-mark" aria-hidden="true"><i /><i /><i /></span>
+      <Image className="logo-image" src="/icon.png" alt="" width={36} height={36} priority />
       <span>Ponup</span>
     </Link>
   );

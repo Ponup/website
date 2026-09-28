@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export function ContextDemo() {
   return (
     <div className="context-demo" aria-label="Ponup context search example">
       <div className="demo-topbar"><span /><span /><span /><b>Product Brain / Search</b><em>⌘ K</em></div>
       <div className="demo-body">
         <div className="demo-sidebar">
-          <div className="mini-logo">P</div>
+          <div className="mini-logo"><Image src="/icon.png" alt="" width={24} height={24} /></div>
           <span className="side-label">SPACES</span>
           <div className="side-item active"><i>PB</i><span>Product Brain<small>42 sources</small></span></div>
           <div className="side-item"><i>CS</i><span>Customer stories<small>18 sources</small></span></div>

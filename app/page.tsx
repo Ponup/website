@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ContextDemo } from "@/components/ContextDemo";
 import { Arrow, Branch, Check, Cloud, File, Layers, Lock, Plug, Search, Share, Shield, Upload } from "@/components/Icons";
 import { SOCIAL_URLS } from "@/constants/social";
@@ -76,7 +77,7 @@ export default function Home() {
           <ul className="check-list"><li><Check />A focused content workspace</li><li><Check />MCP tools and stable resources</li><li><Check />Typed REST and GraphQL access</li><li><Check />Public links when knowledge should travel</li></ul>
         </div>
         <div className="interface-diagram">
-          <div className="diagram-source"><span className="logo-mark"><i/><i/><i/></span><strong>Ponup</strong><small>Knowledge layer</small></div>
+          <div className="diagram-source"><Image className="diagram-logo" src="/icon.png" alt="" width={42} height={42} /><strong>Ponup</strong><small>Knowledge layer</small></div>
           <span className="connector connector-a"/><span className="connector connector-b"/><span className="connector connector-c"/>
           <div className="endpoint ep-one"><span>⌘</span><div><strong>AI agents</strong><small>MCP</small></div></div>
           <div className="endpoint ep-two"><span>⌁</span><div><strong>Your products</strong><small>REST + GraphQL</small></div></div>
