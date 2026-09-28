@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Arrow, Facebook, GitHub, LinkedIn, Twitter } from "./Icons";
+import { GITHUB_URLS, SOCIAL_URLS } from "@/constants/social";
+import { CONTACT_EMAIL, CONTACT_EMAIL_URL } from "@/constants/site";
 
 export function Logo() {
   return (
@@ -22,7 +24,7 @@ export function Header() {
           <Link href="/pricing/">Pricing</Link>
         </nav>
         <div className="nav-actions">
-          <a className="text-link desktop-only" href="https://github.com/ctoframework/ponup">GitHub</a>
+          <a className="text-link desktop-only" href={SOCIAL_URLS.github}>GitHub</a>
           <Link className="button button-small" href="/contact/">Get started <Arrow /></Link>
         </div>
         <details className="mobile-menu">
@@ -32,7 +34,7 @@ export function Header() {
             <Link href="/use-cases/">Use cases</Link>
             <Link href="/alternatives/">Compare</Link>
             <Link href="/pricing/">Pricing</Link>
-            <a href="https://github.com/ctoframework/ponup">Open source</a>
+            <a href={SOCIAL_URLS.github}>Open source</a>
             <Link href="/contact/">Contact</Link>
           </nav>
         </details>
@@ -49,16 +51,16 @@ export function Footer() {
           <Logo />
           <p>Context engineering for AI.<br />Content management for humans.</p>
           <div className="social-links" aria-label="Ponup social media">
-            <a href="https://www.linkedin.com/company/ponup" aria-label="Ponup on LinkedIn" target="_blank" rel="noreferrer"><LinkedIn /></a>
-            <a href="https://www.facebook.com/ponup" aria-label="Ponup on Facebook" target="_blank" rel="noreferrer"><Facebook /></a>
-            <a href="https://x.com/ponup" aria-label="Ponup on X (formerly Twitter)" target="_blank" rel="noreferrer"><Twitter /></a>
-            <a href="https://github.com/ctoframework/ponup" aria-label="Ponup on GitHub" target="_blank" rel="noreferrer"><GitHub /></a>
+            <a href={SOCIAL_URLS.linkedin} aria-label="Ponup on LinkedIn" target="_blank" rel="noreferrer"><LinkedIn /></a>
+            <a href={SOCIAL_URLS.facebook} aria-label="Ponup on Facebook" target="_blank" rel="noreferrer"><Facebook /></a>
+            <a href={SOCIAL_URLS.x} aria-label="Ponup on X (formerly Twitter)" target="_blank" rel="noreferrer"><Twitter /></a>
+            <a href={SOCIAL_URLS.github} aria-label="Ponup on GitHub" target="_blank" rel="noreferrer"><GitHub /></a>
           </div>
         </div>
         <div className="footer-links">
           <div><strong>Product</strong><Link href="/#features">Features</Link><Link href="/use-cases/">Use cases</Link><Link href="/alternatives/">Compare</Link><Link href="/pricing/">Pricing</Link><Link href="/contact/">Cloud</Link></div>
-          <div><strong>Developers</strong><a href="https://github.com/ctoframework/ponup">GitHub</a><a href="https://github.com/ctoframework/ponup#quick-start">Documentation</a><a href="https://github.com/ctoframework/ponup/blob/main/LICENSE">MIT License</a></div>
-          <div><strong>Connect</strong><Link href="/contact/">Contact</Link><a href="mailto:hello@ponup.dev">hello@ponup.dev</a></div>
+          <div><strong>Developers</strong><a href={SOCIAL_URLS.github}>GitHub</a><a href={GITHUB_URLS.documentation}>Documentation</a><a href={GITHUB_URLS.license}>MIT License</a></div>
+          <div><strong>Connect</strong><Link href="/contact/">Contact</Link><a href={CONTACT_EMAIL_URL}>{CONTACT_EMAIL}</a></div>
         </div>
       </div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} Ponup</span><span>Open source at heart. Hosted with care.</span></div>

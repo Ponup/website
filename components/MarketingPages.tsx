@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Alternative, UseCase } from "@/content/marketing";
 import { Arrow, Check, Layers, Search, Share } from "@/components/Icons";
+import { SOCIAL_URLS } from "@/constants/social";
 
 export function CallToAction({ title = "Make your knowledge useful everywhere." }: { title?: string }) {
-  return <section className="final-cta section-shell compact-cta"><div className="cta-glow" /><span className="section-kicker">BUILD THE CONTEXT LAYER</span><h2>{title}</h2><p>Start with the open-source core or talk to us about a managed Ponup workspace.</p><div className="hero-actions"><Link className="button button-light" href="/contact/">Start with Ponup <Arrow /></Link><a className="button button-dark-ghost" href="https://github.com/ctoframework/ponup">Explore open source <span>↗</span></a></div></section>;
+  return <section className="final-cta section-shell compact-cta"><div className="cta-glow" /><span className="section-kicker">BUILD THE CONTEXT LAYER</span><h2>{title}</h2><p>Start with the open-source core or talk to us about a managed Ponup workspace.</p><div className="hero-actions"><Link className="button button-light" href="/contact/">Start with Ponup <Arrow /></Link><a className="button button-dark-ghost" href={SOCIAL_URLS.github}>Explore open source <span>↗</span></a></div></section>;
 }
 
 export function UseCasePage({ item }: { item: UseCase }) {
@@ -13,7 +14,7 @@ export function UseCasePage({ item }: { item: UseCase }) {
       <div className="breadcrumb"><Link href="/use-cases/">Use cases</Link><span>/</span><span>{item.eyebrow.toLowerCase()}</span></div>
       <div className="pill"><span>●</span> {item.eyebrow}</div>
       <h1>{item.title}</h1><p>{item.description}</p>
-      <div className="hero-actions"><Link className="button" href="/contact/">Build with Ponup <Arrow /></Link><a className="button button-ghost" href="https://github.com/ctoframework/ponup">View on GitHub <span>↗</span></a></div>
+      <div className="hero-actions"><Link className="button" href="/contact/">Build with Ponup <Arrow /></Link><a className="button button-ghost" href={SOCIAL_URLS.github}>View on GitHub <span>↗</span></a></div>
     </section>
     <section className="content-band"><div className="section-shell statement-grid"><span>THE OUTCOME</span><h2>{item.outcome}</h2><p>{item.accent}</p></div></section>
     <section className="content-section section-shell split-section">
@@ -42,4 +43,3 @@ export function AlternativePage({ item }: { item: Alternative }) {
     <p className="trademark-note section-shell">All product names and trademarks belong to their respective owners. Ponup is not affiliated with {item.name}.</p>
   </>;
 }
-

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContextDemo } from "@/components/ContextDemo";
 import { Arrow, Branch, Check, Cloud, File, Layers, Lock, Plug, Search, Share, Shield, Upload } from "@/components/Icons";
+import { SOCIAL_URLS } from "@/constants/social";
 
 const features = [
   { icon: Layers, title: "Spaces that match your world", text: "Organize knowledge by product, team, client or agent. Each Space stays focused, searchable and easy to reason about." },
@@ -28,7 +29,7 @@ export default function Home() {
           <p className="hero-lede">Ponup turns the content your team understands into the context your AI needs—organized, searchable and ready to use.</p>
           <div className="hero-actions">
             <Link className="button" href="/contact/">Start with Ponup Cloud <Arrow /></Link>
-            <a className="button button-ghost" href="https://github.com/ctoframework/ponup">View on GitHub <span>↗</span></a>
+            <a className="button button-ghost" href={SOCIAL_URLS.github}>View on GitHub <span>↗</span></a>
           </div>
           <div className="trust-row"><span><Check /> MIT licensed</span><span><Check /> Self-hostable</span><span><Check /> No lock-in</span></div>
         </div>
@@ -94,7 +95,7 @@ export default function Home() {
 
       <section className="choice-section section-shell">
         <div className="choice-card dark-choice">
-          <div className="choice-icon"><Branch /></div><span className="choice-label">OPEN SOURCE</span><h2>Your stack. Your data.<br />Your rules.</h2><p>Run Ponup anywhere Docker runs. Read every line, change what you need and keep your knowledge entirely in your own infrastructure.</p><ul><li><Check />Free forever under MIT</li><li><Check />Local embedding support</li><li><Check />Deploy with Docker Compose</li></ul><a href="https://github.com/ctoframework/ponup">Explore the repository <Arrow /></a>
+          <div className="choice-icon"><Branch /></div><span className="choice-label">OPEN SOURCE</span><h2>Your stack. Your data.<br />Your rules.</h2><p>Run Ponup anywhere Docker runs. Read every line, change what you need and keep your knowledge entirely in your own infrastructure.</p><ul><li><Check />Free forever under MIT</li><li><Check />Local embedding support</li><li><Check />Deploy with Docker Compose</li></ul><a href={SOCIAL_URLS.github}>Explore the repository <Arrow /></a>
         </div>
         <div className="choice-card cloud-choice">
           <div className="choice-icon"><Cloud /></div><span className="choice-label">PONUP CLOUD</span><h2>The context layer,<br />without the upkeep.</h2><p>We run, secure and update Ponup for you. Create a workspace and focus on the knowledge—not the infrastructure behind it.</p><ul><li><Check />Managed updates & backups</li><li><Check />Scale as your context grows</li><li><Check />Human support included</li></ul><Link href="/pricing/">See cloud pricing <Arrow /></Link>
@@ -108,7 +109,7 @@ export default function Home() {
       </section>
 
       <section className="final-cta section-shell">
-        <div className="cta-glow" /><span className="section-kicker">BETTER CONTEXT STARTS HERE</span><h2>Give your knowledge<br />somewhere to <em>live.</em></h2><p>Build a shared source of truth for the people and intelligence shaping what comes next.</p><div className="hero-actions"><Link className="button button-light" href="/contact/">Start with Ponup Cloud <Arrow /></Link><a className="button button-dark-ghost" href="https://github.com/ctoframework/ponup">Self-host Ponup <span>↗</span></a></div>
+        <div className="cta-glow" /><span className="section-kicker">BETTER CONTEXT STARTS HERE</span><h2>Give your knowledge<br />somewhere to <em>live.</em></h2><p>Build a shared source of truth for the people and intelligence shaping what comes next.</p><div className="hero-actions"><Link className="button button-light" href="/contact/">Start with Ponup Cloud <Arrow /></Link><a className="button button-dark-ghost" href={SOCIAL_URLS.github}>Self-host Ponup <span>↗</span></a></div>
       </section>
     </>
   );

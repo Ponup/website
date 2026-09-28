@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/constants/site";
 import { DM_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components/SiteChrome";
@@ -17,7 +18,7 @@ const mono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ponup.dev"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Ponup — Context, ready when it matters",
     template: "%s — Ponup",

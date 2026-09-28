@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Arrow, Check, Cloud, Branch } from "@/components/Icons";
+import { SOCIAL_URLS } from "@/constants/social";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 const plans = [
   {
-    name: "Community", eyebrow: "SELF-HOSTED", price: "$0", suffix: "forever", description: "The complete open-source context layer, on your infrastructure.", cta: "View on GitHub", href: "https://github.com/ctoframework/ponup", icon: Branch,
+    name: "Community", eyebrow: "SELF-HOSTED", price: "$0", suffix: "forever", description: "The complete open-source context layer, on your infrastructure.", cta: "View on GitHub", href: SOCIAL_URLS.github, icon: Branch,
     features: ["Unlimited Spaces and content", "Semantic search", "MCP, REST and GraphQL", "Local or compatible embeddings", "S3-compatible storage", "MIT licensed"],
   },
   {
