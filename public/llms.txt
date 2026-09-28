@@ -1,0 +1,32 @@
+# Ponup
+
+> Ponup is an open-source context engineering and content management platform for people and AI agents. It turns organizational knowledge into governed, searchable, source-linked context and can be self-hosted or used through Ponup Cloud.
+
+Ponup organizes knowledge into focused Spaces, supports Markdown, structured JSON, PDFs, text files, and images, and exposes context through MCP, REST, GraphQL, public links, and a web workspace. The open-source core is MIT licensed and uses portable infrastructure including PostgreSQL, pgvector, and S3-compatible storage.
+
+## Main pages
+
+- [Homepage](https://ponup.com/): Product overview, features, supported interfaces, deployment options, and architecture.
+- [Pricing](https://ponup.com/pricing/): Community, Cloud, and Scale plans, limits, and frequently asked questions.
+- [Contact](https://ponup.com/contact/): Contact Ponup about Cloud, self-hosting, enterprise needs, or technical questions.
+- [Use cases](https://ponup.com/use-cases/): Ways teams use Ponup to make organizational knowledge available to people and AI.
+- [Alternatives](https://ponup.com/alternatives/): Comparisons between Ponup and other knowledge or retrieval approaches.
+
+## Use cases
+
+- [AI agents](https://ponup.com/use-cases/ai-agents/): A shared, attributable context layer for assistants, copilots, automations, and agent workflows.
+- [Customer support](https://ponup.com/use-cases/customer-support/): Unified public and internal support knowledge for people and automated assistants.
+- [Product teams](https://ponup.com/use-cases/product-teams/): Durable access to research, decisions, specifications, and product rationale.
+
+## Comparisons
+
+- [Ponup vs Notion](https://ponup.com/alternatives/notion-alternative/): Compare an all-in-one collaboration workspace with a focused context delivery layer.
+- [Ponup vs Confluence](https://ponup.com/alternatives/confluence-alternative/): Compare an Atlassian-centered collaboration hub with portable knowledge infrastructure.
+- [Ponup vs a custom RAG stack](https://ponup.com/alternatives/custom-rag-alternative/): Compare building retrieval infrastructure from components with adopting Ponup's reusable context layer.
+
+## Open source and contact
+
+- [GitHub repository](https://github.com/ponup/app): Source code, setup instructions, and project documentation.
+- [Quick start](https://github.com/ponup/app#quick-start): Instructions for running the open-source version.
+- [MIT license](https://github.com/ponup/app/blob/main/LICENSE): Terms for using, modifying, and distributing the open-source core.
+- [Email Ponup](mailto:hello@ponup.com): Product, Cloud, self-hosting, and enterprise enquiries.
